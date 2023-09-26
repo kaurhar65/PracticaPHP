@@ -32,5 +32,34 @@
         <li> I medeix: <?php echo $alcada ?></li>
     </ul> 
 
+
+
+<!-- echo $treballa ? 'si : 'no (para que salga true o false) -->
+
+<!-- Práctica2: 26/09/2023 -->
+<?php
+// declaración de una variable constante
+    define("IVA",0.21);
+    $cursos = array(
+            array(1,"PHP", "Introducció a PHP", 15.5),
+            array(2, "Laravel", "Laravel per experts", 30),
+            array(3, "Django", "Dominant Django ", 10)
+    );
+
+    for($i=0; $i<3; $i++){
+        echo$cursos[$i][0];
+        echo$cursos[$i][1];
+        echo$cursos[$i][2];
+        echo$cursos[$i][3];
+    }
+    ?>
+
+    <h1>Llista de cursos</h1>
+    <h2>Numero de cursos apuntats: <?php echo count($cursos)?></h2>
+    
+
+
+
+
 </body>
 </html>

@@ -56,10 +56,18 @@
 
     <h1>Llista de cursos</h1>
     <h2>Numero de cursos apuntats: <?php echo count($cursos)?></h2>
-    
+    <div >
+        <?php 
+            for($n=0;$n<=2;$n++){     
+        ?>
+        <div style="border:2px solid black; width:20% ">
+            <h3><?php echo $cursos[$n][0];?></h3> 
+            <p><?php echo $cursos[$n][1];?></p>
+            <p><?php echo $cursos[$n][2];?></p>
 
-
-
-
+        </div>
+        <?php } ?>
+            
+</div>
 </body>
-</html>
+</html> 
